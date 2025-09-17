@@ -41,9 +41,9 @@ function checkRequired(inputArr) {
 
 // Функция для проверки длинны введенного значения
 function checkLength(input, min, max) {
-    if(input.value.lenghth < min) {
+    if(input.value.length < min) {
         showError(input, `Значение ${getFieldName(input)} должно быть больше ${min} символов.`);
-    } else if(input.value.lenghth > max) {
+    } else if(input.value.length > max) {
         showError(input, `Значение ${getFieldName(input)} должно быть меньше ${max} символов.`);
     } else {
         showSuccess(input);
